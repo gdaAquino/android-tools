@@ -7,7 +7,7 @@ ext.gradlePlugins = [
 
 ext.configs = [
     code             : 1,
-    name             : "1.0",
+    name             : "1.0.0",
     minSDK           : 16,
     targetSDK        : 23,
     compileSDK       : 23,
@@ -27,6 +27,7 @@ ext.versions = [
     jackson                : "2.6.3",
 
     sqlbrite               : "0.6.3",
+    sqldelight             : "0.3.2",
 
     picasso                : "2.5.2",
     picassoOkHttp          : "1.0.2",
@@ -50,17 +51,13 @@ ext.versions = [
 ]
 
 ext.libraries = [
-    /**
-     * Support
-     */
+    //support
     supportAnnotations      : "com.android.support:support-annotations:$versions.support",
     supportDesign           : "com.android.support:design:$versions.support",
     supportPercent          : "com.android.support:percent:$versions.support",
     supportCustomTabs       : "com.android.support:customtabs:$versions.support",
 
-    /**
-     * Support v7
-     */
+    //support v7
     supportAppCompat        : "com.android.support:appcompat-v7:$versions.support",
     supportCardView         : "com.android.support:cardview-v7:$versions.support",
     supportGridLayout       : "com.android.support:gridlayout-v7:$versions.support",
@@ -68,20 +65,10 @@ ext.libraries = [
     supportPalette          : "com.android.support:palette-v7:$versions.support",
     supportRecyclerView     : "com.android.support:recyclerview-v7:$versions.support",
     supportPreference       : "com.android.support:preference-v7:$versions.support",
-
-    /**
-     * Support v13
-     */
     supportV13              : "com.android.support:support-v13:$versions.support",
-
-    /**
-     * Support v14
-     */
     supportPreferenceV14    : "com.android.support:preference-v14:$versions.support",
 
-    /**
-     * Inject
-     */
+    //inject
     butterknife             : "com.jakewharton:butterknife:$versions.butterknife",
     butterknifeCompiler     : "com.jakewharton:butterknife-compiler:$versions.butterknife",
     dagger                  : "com.google.dagger:dagger:$versions.dagger",
@@ -89,9 +76,7 @@ ext.libraries = [
     javaxInject             : "javax.inject:javax.inject:$versions.javaxInject",
     javaxAnnotationApi      : "javax.annotation:javax.annotation-api:$versions.javaxAnnotationApi",
 
-    /**
-     * Network
-     */
+    //network
     okhttp                  : "com.squareup.okhttp3:okhttp:$versions.okhttp",
     okHttpMockWebServer     : "com.squareup.okhttp3:mockwebserver:$versions.okhttp",
     okhttpLogIntercepter    : "com.squareup.okhttp3:logging-interceptor:$versions.okhttp",
@@ -100,20 +85,15 @@ ext.libraries = [
     retrofitJacksonConverter: "com.squareup.retrofit2:converter-jackson:$versions.retrofit",
     jackson                 : "com.fasterxml.jackson.core:jackson-databind:$versions.jackson",
 
-    /**
-     * Database
-     */
+    //database
     sqlbrite                : "com.squareup.sqlbrite:sqlbrite:$versions.sqlbrite",
+    sqldelight              : "com.squareup.sqldelight:gradle-plugin:0.3.2",
 
-    /**
-     * Image
-     */
+    //image
     picasso                 : "com.squareup.picasso:picasso:$versions.picasso",
     picassoOkHttp           : "com.jakewharton.picasso:picasso2-okhttp3-downloader:$versions.picassoOkHttp",
 
-    /**
-     * Utils
-     */
+    //utils
     rxJava                      : "io.reactivex:rxjava:$versions.rxJava",
     timber                      : "com.jakewharton.timber:timber:$versions.timber",
     autoValue                   : "com.google.auto.value:auto-value:$versions.autoValue",
@@ -123,16 +103,13 @@ ext.libraries = [
     paperworkPlugin             : "hu.supercluster:paperwork-plugin:$versions.paperwork",
     paperwork                   : "hu.supercluster:paperwork:$versions.paperwork",
 
-    /**
-     * Debug
-     */
+    //debugs
     stetho                  : "com.facebook.stetho:stetho:$versions.stetho",
     stethoOkHttp            : "com.facebook.stetho:stetho-okhttp3:$versions.stetho",
     leakCanary              : "com.squareup.leakcanary:leakcanary-android:$versions.leakCanary",
+    leakCanaryNoop          : "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakCanary",
 
-    /**
-     * Test
-     */
+    //unit tests
     junit                   : "junit:junit:$versions.junit",
     mockitoCore             : "org.mockito:mockito-core:$versions.mockito",
     hamcrestCore            : "org.hamcrest:hamcrest-core:$versions.hamcrest"
